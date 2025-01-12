@@ -108,3 +108,11 @@ python polt.py --path <path_to_folder>
 
 ## Publication
 Please cite our papers if you use our idea or code:
+```bash
+@inproceedings{mexactp2025sdm,
+  title={MEXA-CTP: Mode Experts Cross-Attention for Clinical Trial Outcome Prediction},
+  author={Zhang, Yiqing and Xiaozhong, Liu and Murai, Fabricio},
+  booktitle={Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)},
+  year={2025}
+}
+```
