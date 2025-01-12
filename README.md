@@ -35,6 +35,18 @@ python createDataset.py
 Please note that changing the data path if necessary.
 
 ## Usage
+Training
+```bash
+python main.py --job train --hypers <hyper>
+```
+You can find the best hypers under results-sota.
+
+Testing
+```bash
+python main.py --job eval -model_path <path_to_folder>
+```
+To duplicate our results, please fix seed to 2023.
+
 
 ## Performance
 Phase I evaluation results on Clinical Trial Outcome Prediction dataset.
@@ -79,6 +91,7 @@ Phase III evaluation results on Clinical Trial Outcome Prediction dataset.
 
 
 ## Advanced
+You can change to your own embedding method by inheriting the family class under /utils/embeddings.py.
 
 
 
