@@ -13,7 +13,6 @@ from torch.optim.lr_scheduler import LambdaLR
 import sys
 from ctp.evaluation import CTPEval
 from ctp.dataset import ClinicalTtrialsPredictionDatasetH as CTPDataset
-# from ctp.models import ClinicalTtrialsPredictionModelH as CTPModel
 from utils.utils import random_seed, get_result_dir, create_result_dir, save_args, save_checkpoint
 
 DATA_FOLDER = os.environ.get('DATA_FOLDER', 'DataPath')
