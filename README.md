@@ -91,8 +91,8 @@ Phase III evaluation results on Clinical Trial Outcome Prediction dataset.
 
 
 ## Advanced
-You can customize the embedding method by inheriting the Family class under /utils/embeddings.py.
-you can train your own model with your custom hypers. To fine-tune your hyperparameters, follow our recommended strategy:
+You can customize the embedding method by inheriting the Family class under /utils/embeddings.py.  
+You can train your own model with your custom hypers. To fine-tune your hyperparameters, follow our recommended strategy:
 * Step 1: Dataset hypers
 * Step 2: Training hypers
 * Step 3: Model hypers
