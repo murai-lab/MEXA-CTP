@@ -37,13 +37,13 @@ Please note that changing the data path if necessary.
 ## Usage
 Training
 ```bash
-python main.py --job train --hypers <hyper>
+python main.py --job train --result_dir <path_to_folder>
 ```
 You can find the best hypers under results-sota.
 
 Testing
 ```bash
-python main.py --job eval -model_path <path_to_folder>
+python main.py --job eval --model_path <path_to_folder>
 ```
 To duplicate our results, please fix seed to 2023.
 
@@ -91,7 +91,18 @@ Phase III evaluation results on Clinical Trial Outcome Prediction dataset.
 
 
 ## Advanced
-You can change to your own embedding method by inheriting the family class under /utils/embeddings.py.
+You can customize the embedding method by inheriting the Family class under /utils/embeddings.py.
+you can train your own model with your custom hypers. To fine-tune your hyperparameters, follow our recommended strategy:
+* Step 1: Dataset hypers
+* Step 2: Training hypers
+* Step 3: Model hypers
+```bash
+python main.py --job trian --hypers <hypers>
+```
+You can visualize the results by
+```bash
+python polt.py --path <path_to_folder>
+```
 
 
 
