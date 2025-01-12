@@ -3,12 +3,10 @@ import numpy as np
 from tqdm import tqdm
 
 import os
-import sys
-sys.path.insert(0, '/home/yzhang37/Trials/')
 from utils.utils_whole import create_path, read_pkl, save_pkl
 
-FILENAME_FOLDER = os.environ.get('FILENAME_FOLDER', '/home/yzhang37/data/clinicalTrialsPrediction/clinical-trial-outcome-prediction/data/')
-DATA_FOLDER = os.environ.get('DATA_FOLDER', '/home/yzhang37/Trials/data/')
+FILENAME_FOLDER = os.environ.get('FILENAME_FOLDER', './data/clinicalTrialsPrediction/clinical-trial-outcome-prediction/data/')
+DATA_FOLDER = os.environ.get('DATA_FOLDER', './xxx/')
 
 def create_subset(nctids, emb_path, data_paths):
     create_path(emb_path)
