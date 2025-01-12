@@ -15,7 +15,24 @@ conda activate mexactp
 pip install requirements.txt
 ```
 ## Dataset
-You can download the dataset [here]([https://github.com/placeforyiming/CVPR21-Deep-Lucas-Kanade-Homography](https://github.com/futianfan/clinical-trial-outcome-prediction)). 
+* Step1: Download dataset
+  You can download the dataset [here](https://github.com/futianfan/clinical-trial-outcome-prediction).
+* Step2: Prepare embeddings
+```bash
+# smiles embedding
+python ./smiles_embedding/ensemble.py
+python ./smiles_embedding/sembed.py
+# icd embedding
+python ./icd_embedding/ensemble.py
+python ./icd_embedding/iembed.py
+# criteria embedding
+python ./criteria_embedding/cembed.py
+```
+* Step3: Tran/Validataion/Test spilt
+```bash
+python createDataset.py
+```
+Please note that changing the data path if necessary.
 
 ## Usage
 
@@ -37,10 +54,26 @@ Phase I evaluation results on Clinical Trial Outcome Prediction dataset.
 Phase II evaluation results on Clinical Trial Outcome Prediction dataset.
 | Method  | F1 | PR-AUC | ROC-AUC|
 | ------------- | ------------- | ------------- | ------------- |
+| LR | .527 | .560 | .559 |
+| RF | .463 | .553 | .626 |
+| KNN+RF | .624 | .573 | .560 |
+| XGBoost | .552 | .585 | .630 |
+| AdaBoost | .583 | .586 | .603 |
+| FFNN | .564 | .589 | .610 |
+| HINT | .635 | .607 | .621 |
+| **MEXA-CTP** | **.695** | **.635** | **.538** |
 
 Phase III evaluation results on Clinical Trial Outcome Prediction dataset.
 | Method  | F1 | PR-AUC | ROC-AUC|
 | ------------- | ------------- | ------------- | ------------- |
+| LR | .624 | .553 | .600 |
+| RF | .675 | .583 | .643 |
+| KNN+RF | .670 | .587 | .643 |
+| XGBoost | .694 | .627 | .668 |
+| AdaBoost | .722 | .589 | .624 |
+| FFNN | .625 | .572 | .620 |
+| HINT | .814 | .603 | .685 |
+| **MEXA-CTP** | **.857** | **.771** | **.693** |
 
 
 
