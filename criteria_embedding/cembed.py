@@ -1,12 +1,10 @@
 import os
 import torch
 
-import sys
-sys.path.insert(0, '/home/yzhang37/Trials/')
 from utils.embedding import Embedding as EMB
 from utils.utils_whole import save_pkl
 
-DATA_PATH = os.environ.get('DATA_PATH', '/home/yzhang37/data/clinicalTrialsPrediction/clinical-trial-outcome-prediction/data/raw_data.csv')
+DATA_PATH = os.environ.get('DATA_PATH', './data/clinicalTrialsPrediction/clinical-trial-outcome-prediction/data/raw_data.csv')
 
 
 class criteriaEmbedding(EMB):
