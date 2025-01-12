@@ -101,7 +101,7 @@ python main.py --job trian --hypers <hypers>
 ```
 You can visualize the results by
 ```bash
-python polt.py --path <path_to_folder>
+python plot.py --path <path_to_folder>
 ```
 
 
