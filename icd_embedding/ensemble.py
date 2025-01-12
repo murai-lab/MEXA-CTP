@@ -3,10 +3,8 @@ import pandas as pd
 import torch
 from tqdm import tqdm
 
-DATA_PATH = os.environ.get('DATA_PATH', '/home/yzhang37/data/clinicalTrialsPrediction/clinical-trial-outcome-prediction/data/raw_data.csv')
+DATA_PATH = os.environ.get('DATA_PATH', './data/clinicalTrialsPrediction/clinical-trial-outcome-prediction/data/raw_data.csv')
 
-import sys
-sys.path.insert(0, '/home/yzhang37/Trials/')
 from utils.utils_whole import read_pkl, save_pkl
 
 
