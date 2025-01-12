@@ -5,7 +5,7 @@ Demo code for our proposed **MEXA-CTP** on Clinicla Trial Outcome Prediciton ben
 ## Introduction
 We proposed **MEXA-CTP** a new method that integrates multi-modal data based on the concept of mode experts, and is optimized with Cauchy and contrastive losses to capture the relevant drug- disease, drug-protocol, and disease-protocol interactions, without resorting to hand-crafted structures.
 
-<div align=center><img src="https://github.com/murai-lab/MEXA-CTP-Mode-Experts-Cross-Attention-for-Clinical-Trial-Outcome-Prediction/blob/main/images/model.png" width="500" height="350" alt="MEXA-CTP model"/></div>
+<div align=center><img src="https://github.com/murai-lab/MEXA-CTP-Mode-Experts-Cross-Attention-for-Clinical-Trial-Outcome-Prediction/blob/main/images/model.png" alt="MEXA-CTP model"/></div>
 
 ## Requirements
 Create a new anaconda environment and install all required packages before runing the code.
