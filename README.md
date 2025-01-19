@@ -15,8 +15,7 @@ conda activate mexactp
 pip install requirements.txt
 ```
 ## Dataset
-* Step1: Download dataset    
-You can download the dataset [here](https://github.com/futianfan/clinical-trial-outcome-prediction).
+* Step1: You can download the dataset [here](https://github.com/futianfan/clinical-trial-outcome-prediction).
 * Step2: Prepare embeddings
 ```bash
 # smiles embedding
@@ -35,9 +34,9 @@ python createDataset.py
 Please note that changing the data path if necessary.
 
 ## Usage
-You can download the checkpoints [here](https://www.dropbox.com/scl/fo/rru21hfyz65bvj6mrab17/AHLPgKv9a-2gp4PMBUFKaro?rlkey=x1br14dy86ckhokc6bc7q9cus&st=nxft4l8w&dl=0).
+* Step1: You can download the checkpoints [here](https://www.dropbox.com/scl/fo/rru21hfyz65bvj6mrab17/AHLPgKv9a-2gp4PMBUFKaro?rlkey=x1br14dy86ckhokc6bc7q9cus&st=nxft4l8w&dl=0).
 
-Testing
+* Step2: Testing
 ```bash
 python main.py --job eval --model_path <path_to_folder>
 ```
