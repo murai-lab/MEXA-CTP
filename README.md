@@ -16,7 +16,7 @@ pip install requirements.txt
 ```
 ## Dataset
 * Step1: Download dataset
-  You can download the dataset [here](https://github.com/futianfan/clinical-trial-outcome-prediction).
+You can download the dataset [here](https://github.com/futianfan/clinical-trial-outcome-prediction).
 * Step2: Prepare embeddings
 ```bash
 # smiles embedding
