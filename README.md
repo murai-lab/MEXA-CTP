@@ -35,11 +35,7 @@ python createDataset.py
 Please note that changing the data path if necessary.
 
 ## Usage
-Training
-```bash
-python main.py --job train --result_dir <path_to_folder>
-```
-You can find the best hypers under results-sota.
+You can download checkpoints [here](https://www.dropbox.com/scl/fo/rru21hfyz65bvj6mrab17/AHLPgKv9a-2gp4PMBUFKaro?rlkey=x1br14dy86ckhokc6bc7q9cus&st=nxft4l8w&dl=0).
 
 Testing
 ```bash
