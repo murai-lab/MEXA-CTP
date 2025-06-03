@@ -2,7 +2,7 @@ import os
 import torch
 
 from utils.embedding import Embedding as EMB
-from utils.utils_whole import save_pkl, read_pkl
+from utils.utils import save_pkl, read_pkl
 from ensemble import *
 
 DATA_PATH = os.environ.get('DATA_PATH', './data/clinicalTrialsPrediction/clinical-trial-outcome-prediction/data/raw_data.csv')
