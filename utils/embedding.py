@@ -3,7 +3,7 @@ from tqdm import tqdm
 from glob import glob
 
 import sys
-from utils.utils_whole import path_exist, create_path, read_pkl, save_pkl
+from utils.utils import path_exist, create_path, read_pkl, save_pkl
 
 
 class Embedding(object):
