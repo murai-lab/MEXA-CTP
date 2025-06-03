@@ -3,7 +3,7 @@ import numpy as np
 from tqdm import tqdm
 
 import os
-from utils.utils_whole import create_path, read_pkl, save_pkl
+from utils.utils import create_path, read_pkl, save_pkl
 
 FILENAME_FOLDER = os.environ.get('FILENAME_FOLDER', './data/clinicalTrialsPrediction/clinical-trial-outcome-prediction/data/')
 DATA_FOLDER = os.environ.get('DATA_FOLDER', './xxx/')
