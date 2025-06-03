@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 DATA_PATH = os.environ.get('DATA_PATH', './data/clinicalTrialsPrediction/clinical-trial-outcome-prediction/data/raw_data.csv')
 
-from utils.utils_whole import read_pkl, save_pkl
+from utils.utils import read_pkl, save_pkl
 
 
 def get_smiles(smiles):
